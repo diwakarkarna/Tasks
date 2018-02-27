@@ -102,24 +102,5 @@ function onSwap(){
     var toNode = nodeArray[toDiv-1];
     
     swap(fromNode,toNode);
-    /*if(fromDiv<=firstContainer.childElementCount&&toDiv<=firstContainer.childElementCount){
-       fromNode = firstContainer.childNodes[fromDiv - 1];
-      toNode = firstContainer.childNodes[toDiv -1];
-      swap(fromNode,toNode);
-    }else if (fromDiv > firstContainer.childElementCount && toDiv <= firstContainer.childElementCount){
-        fromNode = secondContainer.childNodes[fromDiv-(secondContainer.childElementCount+2)];
-        toNode = firstContainer.childNodes[toDiv-1];
-        swap(fromNode,toNode);
-    }
-    else if (fromDiv <= firstContainer.childElementCount && toDiv > firstContainer.childElementCount){
-        fromNode = firstContainer.childNodes[fromDiv-1];
-        toNode = secondContainer.childNodes[toDiv-(secondContainer.childElementCount+2)];
-        swap(fromNode,toNode);
-    }else{
-        fromNode = secondContainer.childNodes[fromDiv-(secondContainer.childElementCount+2)];
-        toNode = secondContainer.childNodes[toDiv-(secondContainer.childElementCount+2)];
-        swap(fromNode,toNode);
-    }*/
-    
     
 }
