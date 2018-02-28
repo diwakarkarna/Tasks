@@ -26,11 +26,16 @@ html, body{
 #createContainer{
     float: left;
     height: inherit;
-    width: calc(100% / 2);
+    width: calc(100% / 3);
 }
 #swapContainer{
     height: inherit;
-    width: calc(100% / 2);
+    width: calc(100% / 3);
+    float: left;
+}
+#deleteButtonContainer{
+    height: inherit;
+    width: calc(100% / 3);
     float: left;
 }
 #inputContainer{
