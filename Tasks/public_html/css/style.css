@@ -26,11 +26,21 @@ html, body{
 #createContainer{
     float: left;
     height: inherit;
-    width: calc(100% / 2);
+    width: 500px;
 }
 #swapContainer{
     height: inherit;
-    width: calc(100% / 2);
+    width: 500px;
+    float: left;
+}
+#deleteButtonContainer{
+    height: inherit;
+    width: 100px;
+    float: left;
+}
+#createDate{
+    height: inherit;
+    width: 100px;
     float: left;
 }
 #inputContainer{
@@ -51,6 +61,8 @@ html, body{
 }
 #buttonContainer{
     height: 100%;
+    width:auto;
+    float:left;
 }
 .button{
     position: relative;
@@ -74,5 +86,21 @@ html, body{
     width:inherit;
 }
 .ContainerChild{
-    float:left
+    float:left;
+    text-align: center;
+     
+}
+.dateSpan{
+    float: left;
+    position: relative;
+    clear: left;
+    right: -40%;
+    top: 40%;
+}
+.timeSpan{
+    float: left;
+    position: relative;
+    clear: left;
+    right: -40%;
+    top:80%;
 }
