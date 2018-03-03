@@ -24,6 +24,13 @@ function getRandomColor() {
      parentNode.appendChild(element);
  }
  
+ function createSpan(className, parentNode, value){
+     var element = document.createElement('span');
+     element.setAttribute('class', className);
+     element.innerHTML=value;
+     parentNode.appendChild(element);
+ }
+ 
  //function to determine how the divs to be created are divided
  function calculateDivNumbers(Value){
     if(Value%2==0){
@@ -129,3 +136,24 @@ function onDelete(){
        },3000);
        
 }  
+
+function createDateTime(){
+    var date = new Date();
+    var dateValue;
+    var timeValue;
+    for(var i=0;i<nodeArray.length;i++){
+        if(nodeArray[i].childElementCount>0){
+            var dateSpan = nodeArray[i].getElementsByClassName('dateSpan');
+            var timeSpan = nodeArray[i].getElementsByClassName('timeSpan');
+            nodeArray[i].removeChild(dateSpan[0]);
+            nodeArray[i].removeChild(timeSpan[0]);
+        }
+        date.setDate(date.getDate()-i);
+        date.setMinutes(date.getMinutes() - 10);
+        dateValue = date.toLocaleDateString();
+        timeValue = date.toLocaleTimeString();
+        
+        createSpan('dateSpan',nodeArray[i],dateValue);
+        createSpan('timeSpan',nodeArray[i],timeValue);
+    }
+}
